@@ -1,14 +1,60 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+
+
+  "survey_properties": {
+    "intro_message":  "<strong>SURVEY DATA </strong>: Veillez remplire avec les conditions requises des data pour chaque operateurs mobiles <br>une solution plus fiable et rapide pour vos enquettes",
+    "end_message": "Merci le survey complet.",
+    "skip_intro": true
+  },
+
+
+  "questions": [
+    {
+      "question_type": "Checkboxes",
+      "question_title": "Vendez-vous le Mb de reseau suivant ?",
+      "description": "(Selectionez le reseau disponible)",
+      "required": false,
+      "random_choices": false,
+      "choices": [
+        "Africell",
+        "Vodacom",
+        "Orange",
+        "Airtel"
+      ]
+    },
+    {
+      "question_title": " Combien coute 70Mbs Africell ?",
+      "description": "",
+      "required": false,
+      "question_type": "Number"
+    },
+
+    {
+      "question_title": " Combien coute 50 Mbs Orange ?",
+      "description": "",
+      "required": false,
+      "question_type": "Number"
+    },
+    {
+      "question_title": " Combien coute 50 Mbs Vodacom ?",
+      "description": "",
+      "required": false,
+      "question_type": "Number"
+    },
+    {
+      "question_title": " Combien coute 50 Mbs Airtel ?",
+      "description": "",
+      "required": false,
+      "question_type": "Number"
+    },
+
+
+    {
+      "question_type": "String",
+      "question_title": "Commune ?",
+      "description": "",
+      "required": false,
+      "number_of_lines": 4
+    }
+  ]
 }
